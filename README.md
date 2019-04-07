@@ -1,2 +1,2 @@
 # PRODERJ
-Desenvolvimento de portal.
+Desenvolvimento do portal.
