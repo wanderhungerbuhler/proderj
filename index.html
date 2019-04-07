@@ -8,6 +8,7 @@
 
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/slider.css"/>
 
 </head>
 <body>
@@ -59,13 +60,33 @@
   <!-- #MENU -->
 
 	<div class="container">
-		<div class="slider">
+		<!-- <div class="slider">
 			<div class="desc-slider">
 				<span>Governador</span>
 				<h1>Witzel sublinha necessidade de
 				investimentos para elevar receita</h1>
 			</div>
-		</div>
+		</div> -->
+
+    <div class="slide">
+      <ul>
+        <li>
+          <div class="desc-slider">
+            <span>Governador</span>
+            <h1>Witzel sublinha necessidade de investimentos para receita</h1>
+          </div>
+          <img src="./images/slider1.jpg" alt="">
+        </li>
+
+        <li>
+          <div class="desc-slider">
+            <span>Segurança</span>
+            <h1>Homicídio doloso registra queda pelo segundo mês consecutivo</h1>
+          </div>
+          <img src="./images/bn2.png" alt="">
+        </li>
+      </ul>
+    </div>
 
 		<!-- OUTRAS NOTÍCIAS -->
 		<section class="container-noticias">
@@ -246,5 +267,17 @@
   </footer>
   <!-- #FOOTER -->
 
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="./js/jquery.slide.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('.slide').slide({
+      'slideSpeed': 3000,
+      'isShowArrow': true,
+      'dotsEvent': 'mouseenter',
+      'isLoadAllImgs': true
+    });
+  });
+</script>
 </body>
 </html>

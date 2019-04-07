@@ -1,6 +1,5 @@
 *{margin:0; padding:0; box-sizing: border-box;}
 img{width: 100%;}
-html{height: 100%;}
 body{font-family: 'Open Sans', sans-serif; background: #ffffff;}
 
 /* MENU */
@@ -26,18 +25,8 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
-.btn-search{
-  width: 20px;
-  height: 20px;
-  background: url('../images/search.svg') no-repeat center center;
-  background-size: cover;
-  margin-left:-55px;
-  border:0;
-  top:5px;
-  z-index: 100;
-  position: relative;
-}
-
+.btn-search{width: 20px; height: 20px; background: url('../images/search.svg') no-repeat center center;
+  background-size: cover; margin-left:-55px; border:0; top:5px; z-index: 100; position: relative;}
 .redes li, .redes-ft li{ list-style: none; display: inline-block; border-right:1px solid #e2e2e2; width:25px;}
 .redes li:nth-child(5n), .redes-ft li:nth-child(5n){border-right:1px solid transparent;}
 .redes-ft{margin-top:50px;}
@@ -53,25 +42,15 @@ input[type="search"]::-webkit-search-results-decoration {
 .soundcloud{background: url('../images/soundcloud.svg') no-repeat center center; background-size: cover;}
 .soundcloud-ft{background: url('../images/soundcloud-ft.svg') no-repeat center center; background-size: cover;}
 .list-menu{display:flex; justify-content: flex-end; box-shadow: 0px 15px 10px #e2e2e2;}
-.list-menu li {list-style: none; padding:.8em; background:linear-gradient(150deg, #00508a, #0074a5);
-  transform: skewX(-15deg); margin-left:-6px;}
+.list-menu li {list-style: none; padding:1em; background:linear-gradient(150deg, #00508a, #0074a5);
+  transform: skewX(-15deg); margin-left:-7px;}
 .list-menu li:nth-last-child(1){width: 25%; background: #00508a; transform: none;}
 .list-menu li:nth-last-child(1) a{transform: none;}
 .list-menu li a {text-decoration: none; color:#fff; font-size: .8em; display: block; transform: skew(15deg);}
 .list-menu li:hover{background: #00508a; cursor: pointer;}
 
 /* CONTAINER */
-.container{
-  width:980px;
-  min-height: 500px;
-  max-width: 100%;
-  padding: 1em;
-  margin:0 auto;
-}
-.slider{background: url('../images/slider1.jpg') no-repeat; background-size: cover; height: 400px;}
-.desc-slider{height:400px; background: rgba(0,0,0,.6); padding:2em; margin-top:20px;}
-.desc-slider span{color:#fff; width:40%; margin-top:50px; display: block;}
-.desc-slider h1{color:#fff; width: 35%; font-weight: bold; font-size:2em;}
+.container{width:980px; min-height: 500px; max-width: 100%; padding: 1em; margin:0 auto;}
 
 /* Seção de Noticias */
 .container-noticias{margin-top:30px;}
@@ -84,10 +63,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* BTN LISTAGEM DE NOTÍCIAS */
 .lista-noticias{padding:.5em 2em; border:0; border-radius:5px; font-weight: bold; text-transform: uppercase;
-  font-size:.7em; margin:0 auto; display:block; margin-top:-10px; display: block;}
+  font-size:.7em; margin:0 auto; margin-top:-10px; display: block;}
 .lista-noticias a{color:#363636; text-decoration:none;}
 .lista-noticias-line::before{content:""; width: 100%; height: 1px; background: #e2e2e2; display: block;
-  top:15px; z-index: -1; position: absolute;}
+  top:3px; z-index: -1; position: relative;}
 
 /* SERVIÇOS + PROCURADOS */
 .servicos{display: flex; margin-top:100px;}
@@ -141,7 +120,6 @@ input[type="search"]::-webkit-search-results-decoration {
   border-left: 30px solid transparent; right: -50px; top: 40px;}
 .programas-acoes article{width:30%; margin:5px; padding:1.5em; background:#e2e2e2; }
 
-
 /* PÁGINAS INTERNAS */
 .imprensa-titulo{display: flex; justify-content: space-between; align-content: center; align-items:center;}
 .imprensa-titulo h1{width:203px; display: block; position: relative; margin-top:-60px;  background:linear-gradient(150deg, #00508a, #0074a5);
@@ -168,20 +146,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .tags li {padding:0px 7px; border-radius:5px; list-style: none; background: #e2e2e2; margin:5px;}
 .tags li a{text-decoration: none; font-size:.9em; color:#363636;}
 
-
 /* FOOTER */
-.footer{
-  width: 100%;
-  position: relative;
-  bottom:0;
-  display: block;
-  background:#00508a;
-  color:#fff;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-}
+.footer{width: 100%; position: relative; bottom:0; display: block; background:#00508a; color:#fff;
+  display: flex; justify-content: space-around; flex-direction: column; align-items: center;}
 .footer h1{margin-top:50px; font-size:1.5em;}
 .footer span{font-weight: 300; font-size:.8em;}
 .logofooter{width:400px; height: 150px; background: url('../images/logo-governo-w.png') no-repeat center center;
