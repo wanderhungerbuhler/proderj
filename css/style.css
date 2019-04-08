@@ -146,6 +146,18 @@ input[type="search"]::-webkit-search-results-decoration {
 .tags li {padding:0px 7px; border-radius:5px; list-style: none; background: #e2e2e2; margin:5px;}
 .tags li a{text-decoration: none; font-size:.9em; color:#363636;}
 
+
+/* SOBRE O GOVERNO */
+.artigo-container{display: flex; justify-content: space-between; margin-bottom: 4%; background-color: red;}
+#sobreGoverno{background-color: green; font-size: 1.75em; font-weight: bold;}
+.artigo-container span{background-color: blue; font-size: 1.5em; font-weight: bold;}
+.artigo-container .item2{background-color: yellow; font-size: 1.5em; font-weight: bold; text-align: center;}
+
+.artigoItem{background: green; width: 46%;}
+
+
+/* FIM SOBRE O GOVERNO */
+
 /* FOOTER */
 .footer{width: 100%; position: relative; bottom:0; display: block; background:#00508a; color:#fff;
   display: flex; justify-content: space-around; flex-direction: column; align-items: center;}
