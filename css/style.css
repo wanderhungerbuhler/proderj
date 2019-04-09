@@ -246,6 +246,22 @@ padding-bottom: 30px;}
 .otr-conteudo-desc ul{list-style: none;}
 .otr-conteudo-desc li a{text-decoration: none; color:#717171;}
 
+
+/* MODAL */
+.modal-container{width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, .5); 
+  position: fixed; top: 0px; left: 0px; z-index: 2000; display: flex; justify-content: center; align-items: center;}
+
+.modal{background: white; width: 60%; min-width: 300px; padding: 20px; justify-content: space-between; }
+.modal-info{background: tomato; text-align: justify; align-content: space-between;}
+.modal img{width: 218px;  float: left; margin-right: 2%;}
+.modal-contatos{margin-top: 10px;}
+
+
+
+
+
+
+
 /* MOBILE */
 @media (max-width: 650px){
   .container{width:100%};
