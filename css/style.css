@@ -3,7 +3,7 @@ img{width: 100%;}
 body{font-family: 'Open Sans', sans-serif; background: #ffffff;}
 
 /* MENU */
-.menu{background: #f3f3f3;}
+.menu{background: #f3f3f3; display: flex; flex-direction: column;}
 .menusup{background: #363636;}
 .menusupi{width:70%; margin:0 auto; display: flex; justify-content: space-between;}
 .menusup a{text-decoration: none; color:#fff; margin-left:30px; font-size: .8em;}
@@ -182,16 +182,16 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* FOOTER */
 .footer{width: 100%; position: relative; bottom:0; display: block; background:#00508a; color:#fff;
-  display: flex; justify-content: space-around; flex-direction: column; align-items: center;}
+  display: flex; padding:2em; justify-content: space-around; flex-direction: column; align-items: center;}
 .footer h1{margin-top:50px; font-size:1.5em;}
 .footer span{font-weight: 300; font-size:.8em;}
 .logofooter{width:400px; height: 150px; background: url('../images/logo-governo-w.png') no-repeat center center;
-  background-size:100%; margin-bottom:50px;}
+  background-size:70%; margin-bottom:50px;}
 
 
 /*  SECRETARIAS */
 .secretarias-conteudo .art{display: flex; justify-content: space-between; border:1px solid #e2e2e2; background: #fff;}
-.secretarias-conteudo img{width: 200px; height: 200px; border-right:1px solid #e2e2e2;}
+.secretarias-conteudo img{border-right:1px solid #e2e2e2;}
 .secretarias-conteudo article{padding:1em;}
 .secretarias-conteudo h1{text-transform: uppercase; color: #00508a; font-weight: 600;}
 .secretarias-conteudo span{text-transform: uppercase; color: #363636; font-weight: 600; margin:10px 0px; display: block;}
@@ -229,11 +229,19 @@ input[type="search"]::-webkit-search-results-decoration {
   background-size:75%; display: block; position:absolute; margin-left:-110px; margin-top:10px; padding:.54em;}
 
 /* OUTROS ORGÃOS */
-.otr-conteudo{display: flex; justify-content: space-between;}
-.otr-conteudo article{width: 200px; height: 150px; background: #e2e2e2; margin:5px; display: flex;
+.otr-conteudo{display: flex; justify-content: space-around;}
+.otr-conteudo article{width: 100%; height: 150px; background: #e2e2e2; margin:5px; display: flex;
   justify-content: center; align-items: center; z-index: 1;}
-.otr-conteudo article::before{content:""; width: 70px; height: 70px; /*background: red;*/ position: absolute;
+
+.icons-orgaos::before{content:""; width: 70px; height:90px; background: red; position: absolute;
   z-index: -1;}
+
+.fundacoes::before{background: url('../images/fundacoes.png') no-repeat center center; background-size:cover;}
+.empresas::before{background: url('../images/empresas.png') no-repeat center center; background-size:cover;}
+.autarquias::before{background: url('../images/autarquias.png') no-repeat center center; background-size:cover;}
+.instituto::before{background: url('../images/fundacoes.png') no-repeat center center; background-size:cover;}
+
+
 .otr-conteudo article h1{color:#00508a; font-weight: bold;}
 
 .otr-conteudo-desc span{width:10%; color:#e2e2e2; font-weight: bold;
@@ -247,11 +255,35 @@ padding-bottom: 30px;}
 .otr-conteudo-desc li a{text-decoration: none; color:#717171;}
 
 /* MOBILE */
-@media (max-width: 650px){
-  .container{width:100%};
 
-  .imprensa-titulo{flex-direction: column;}
-  .imprensa-titulo h1{width:100%; display: block; position: relative; margin-top:-60px;  background:linear-gradient(150deg, #00508a, #0074a5);
+@media (max-width: 1260px){
+  /* SECRETARIAS */
+  .art, .secretarias-atendimento, .secretarias-conteudo img{
+    width: 100%;
+    text-align: center;
+    flex-direction:column;
+  }
+}
+
+@media (max-width: 860px){
+  .menusupi{display: none;}
+  .homemenu{height:180px; flex-direction: column; justify-content: space-between; align-items: center;}
+  .logo{margin-right: 0; margin-top:0; margin-bottom:30px;}
+  .form-pesquisa .buscarportal{margin-right:0;}
+  .redes{padding:1em;}
+
+  .list-menu{box-shadow: 0; flex-direction:column;}
+  .list-menu li {width:100%; list-style: none; padding:1.5em; background:linear-gradient(150deg, #00508a, #0074a5);
+    transform:none; margin-left:0; margin-top:-7px; }
+  .list-menu li:nth-last-child(1){width: 100%; background: #00508a; transform: none; }
+  .list-menu li a {text-decoration: none; color:#fff; font-size: .8em; display: block; transform: none; }
+  .list-menu li:hover{background: #02385f; cursor: pointer;}
+
+  .container{width:100%;}
+
+  /* IMPRENSA */
+  .imprensa-titulo{display:flex; flex-direction: column;}
+  .imprensa-titulo h1, .secretarias-titulo h1{width:100%; display: block; position: relative; margin-top:-60px;  background:linear-gradient(150deg, #00508a, #0074a5);
     padding:.4em; color:#fff; margin-top:30px;}
   .imprensa-titulo h1::after {content: ""; position: absolute; border-top: 50px solid #fff;
     border-left: 30px solid transparent; right: 0px; top: 0px;}
@@ -264,10 +296,12 @@ padding-bottom: 30px;}
     font-weight: bold; border:0; margin-top:70px; position: absolute; right:15px; display: block;
     text-transform: uppercase;}
 
-    .imprensa-conteudo-descritivos{
-      width: 100%;
-      flex-wrap: wrap;
-    }
+    .imprensa-conteudo-descritivos{width: 100%; flex-wrap: wrap;}
 
     .imprensa-conteudo-imagem, .imprensa-desc-conteudo{width:100%;}
+
+    /* OUTROS ORGÃOS */
+    .otr-conteudo{justify-content: space-around;  flex-wrap:wrap;}
+    .outros-orgaos-titulo h1{width:100%;}
 }
+
