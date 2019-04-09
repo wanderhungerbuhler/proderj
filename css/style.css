@@ -262,57 +262,10 @@ padding-bottom: 30px;}
 
 
 /* MODAL */
-<<<<<<< HEAD
 .modal-container{width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, .5);
   position: fixed; top: 0px; left: 0px; z-index: 2000; display: flex; justify-content: center; align-items: center;}
-=======
->>>>>>> 0d1a9a0ae6773abf60d8a339f604f4f8b0e1fdab
 
 
-<<<<<<< HEAD
-=======
-.modal-container{ display: none; width: 100vw; height: 100vh; background-color: rgba(0, 80, 138, 0.911); 
-  position: fixed; top: 0px; left: 0px; z-index: 2000;  justify-content: center; align-items: center;}
-
-.modal-container.mostrar-modal{display: flex;}
-
-.modal{background: white; width: 60%; height: 70%; min-width: 300px; padding: 40px; position: relative; 
-  display: flex;}
-@keyframes modal{
-  from{
-      opacity: 0;
-      transform: translate3d(0, -60px, 0);
-  }
-  to{
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-  }
-}
-
-.mostrar-modal{
-  animation: modal .3s;
-}
-
-
-.modal img{width: 40%; border: 2px solid #333;}
-
-.modal-info{background: #fff; text-align: justify; padding-left: 2%; overflow: hidden; }
-.modal-info h1{color: #00508a; font-size: 2.75em;}
-.modal-info span{color: #333; font-size: 1.125em; margin-bottom: 20px;}
-.modal-info p{color: #333; font-size: 1em;}
-.modal-info h3{color: #00508a; font-size: 1.75em;}
-
-.btn-fechar{position: absolute; top: -10px; right: -10px; width: 50px; height: 50px; border: #fff; background: none;
-   font-size: 1.5em; font-weight: 900; color: #333; cursor: pointer;}
-
-
- 
-
-
-
-
-
->>>>>>> 0d1a9a0ae6773abf60d8a339f604f4f8b0e1fdab
 /* MOBILE */
 
 @media (max-width: 1260px){
