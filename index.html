@@ -29,6 +29,8 @@
 
   <!-- MENU -->
 	<nav class="menu">
+    <button class="menu-mobile"></button>
+    <button class="menu-mobile-close"></button>
 		<div class="homemenu">
 			<div class="logo">
         <a href="/">
@@ -279,6 +281,20 @@
       'dotsEvent': 'mouseenter',
       'isLoadAllImgs': true
     });
+  });
+</script>
+
+<script>
+  $('.menu-mobile').click(function(){
+    $('.menu-mobile').fadeOut(1);
+    $('.list-menu').slideToggle("slow");
+    $('.menu-mobile-close').css('display', 'block');
+  });
+
+  $('.menu-mobile-close').click(function(){
+    $('.menu-mobile-close').fadeOut(1);
+    $('.list-menu').slideToggle("slow");
+    $('.menu-mobile').css('display', 'block');
   });
 </script>
 </body>
