@@ -1,2 +1,0 @@
-# PRODERJ
-Desenvolvimento do portal.
