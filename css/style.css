@@ -262,21 +262,16 @@ padding-bottom: 30px;}
 
 
 /* MODAL */
-<<<<<<< HEAD
 .modal-container{width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, .5);
   position: fixed; top: 0px; left: 0px; z-index: 2000; display: flex; justify-content: center; align-items: center;}
-=======
->>>>>>> 0d1a9a0ae6773abf60d8a339f604f4f8b0e1fdab
 
 
-<<<<<<< HEAD
-=======
-.modal-container{ display: none; width: 100vw; height: 100vh; background-color: rgba(0, 80, 138, 0.911); 
+.modal-container{ display: none; width: 100vw; height: 100vh; background-color: rgba(0, 80, 138, 0.911);
   position: fixed; top: 0px; left: 0px; z-index: 2000;  justify-content: center; align-items: center;}
 
 .modal-container.mostrar-modal{display: flex;}
 
-.modal{background: white; width: 60%; height: 70%; min-width: 300px; padding: 40px; position: relative; 
+.modal{background: white; width: 60%; height: 70%; min-width: 300px; padding: 40px; position: relative;
   display: flex;}
 @keyframes modal{
   from{
@@ -306,13 +301,12 @@ padding-bottom: 30px;}
    font-size: 1.5em; font-weight: 900; color: #333; cursor: pointer;}
 
 
- 
 
 
 
 
 
->>>>>>> 0d1a9a0ae6773abf60d8a339f604f4f8b0e1fdab
+
 /* MOBILE */
 
 @media (max-width: 1260px){
