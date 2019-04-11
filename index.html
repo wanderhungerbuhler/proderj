@@ -29,8 +29,8 @@
 
   <!-- MENU -->
 	<nav class="menu">
-    <button class="menu-mobile"></button>
-    <button class="menu-mobile-close"></button>
+    <a class="menu-mobile"></a>
+    <a class="menu-mobile-close"></a>
 		<div class="homemenu">
 			<div class="logo">
         <a href="/">
@@ -283,19 +283,6 @@
     });
   });
 </script>
-
-<script>
-  $('.menu-mobile').click(function(){
-    $('.menu-mobile').fadeOut(1);
-    $('.list-menu').slideToggle("slow");
-    $('.menu-mobile-close').css('display', 'block');
-  });
-
-  $('.menu-mobile-close').click(function(){
-    $('.menu-mobile-close').fadeOut(1);
-    $('.list-menu').slideToggle("slow");
-    $('.menu-mobile').css('display', 'block');
-  });
-</script>
+<script src="./js/menu-mobile.js"></script>
 </body>
 </html>
